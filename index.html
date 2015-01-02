@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Emma Azelborn's personal website">
+    <meta name="author" content="Emma Azelborn"> 
+    <meta name="keywords" content="Emma, Azelborn, Emma Azelborn, Performing Arts Technology, Duderstadt Media Center">
+    <link rel="shortcut icon" href="images/Edot.png">
+
+    <title>Emma Azelborn</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/css/stylesheet.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body style="background: url(images/subtle_dots_@2X.png)">
+
+    <div class="coverContainer" style="background: url(images/backgrounddotscontent.png) center center fixed no-repeat; background-size: cover; -moz-background-size: cover;">
+        
+        <div class="coverstuff">
+            <div class="row">
+                <a href="about.html">
+                <img id="coverimage" src="images/Emmacircle.png" >
+              </a>
+            </div>
+            <div class="row">
+                <img src="images/BigEdot.png" id="coverlogo">
+            </div>
+            <div class="row" style="padding-bottom:15px">
+                <img src="images/ring.png" id="ring1">
+                <a href="about.html" class="tab1">About</a>
+            </div>
+            <div class="row"  style="padding-bottom:15px">
+                <img src="images/ring.png" id="ring2" >
+                <a href="music.html"  id="active" class="tab2">Audio</a>
+            </div>
+            <div class="row" style="padding-bottom:15px">
+                <img src="images/ring.png" id="ring3">
+                <img src="images/dottrans.png" id="dot">
+                <a href="code.html" class="tab3">Code</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <script>
+    $("a.tab1").hover(
+        function() {
+          $( "#ring1").css("visibility", "visible");
+        }, function() {
+          $( "#ring1" ).css("visibility", "hidden");
+        }
+      );
+    $("a.tab2").hover(
+        function() {
+          $( "#ring2").css("visibility", "visible");
+        }, function() {
+          $( "#ring2" ).css("visibility", "hidden");
+        }
+      );
+    $("a.tab3").hover(
+        function() {
+          $( "#ring3").css("visibility", "visible");
+        }, function() {
+          $( "#ring3" ).css("visibility", "hidden");
+        }
+      );
+    </script>
+  </body>
+</html>

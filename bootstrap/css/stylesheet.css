@@ -1,0 +1,456 @@
+@font-face {
+    font-family: "Jones";
+    	src: url("/webfonts/MrJonesBook.eot");
+        src: url("/webfonts/MrJonesBook.ttf") format("truetype"),
+        	url("/webfonts/MrJonesBook.woff") format("woff"),
+        	url("/webfonts/MrJonesBook.svg#webfont") format("svg");
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face{ 
+	font-family: "Contra";
+	src: url("/webfonts/contra-webfont.eot");
+	src: url("/webfonts/contra-webfont.eot?iefix") format("eot"),
+	     url("/webfonts/contra-webfont.woff") format("woff"),
+	     url("/webfonts/contra-webfont.ttf") format("truetype"),
+	     url("/webfonts/contra-webfont.svg#webfont") format("svg");
+}
+html {
+	background: transparent;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	background: transparent;
+	height: 100%;
+	padding: 0;
+}
+body > .container {
+	padding: 15px 15px 0;
+}
+/* button {
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none; 
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #046484;
+  background-color: #ffffff;
+  border: 1px solid #046484;
+}*/
+.videowrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videowrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.coverContainer {
+
+	width: 100%;
+	height: 100%;
+	/*background: url(images/backgrounddots.png)
+	center center fixed no-repeat;
+  	-moz-background-size: cover;
+  	background-size: cover;*/
+}
+.coverstuff {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -90px;
+	margin-top: -250px;
+}
+#coverlogo {
+	max-width: 70px;
+	margin-left: 62px;
+	margin-bottom: 20px;
+}
+#coverimage {
+	margin-left: 7px;
+}
+#coverimage:hover {
+	transform:scale(1);
+    -ms-transform:scale(1); /* IE 9 */
+    -moz-transform:scale(1); /* Firefox */
+    -webkit-transform:scale(1); /* Safari and Chrome */
+    -o-transform:scale(1); /* Opera */
+}
+
+
+#bigcontainer {
+	width: 90%;
+	margin-left: 5%;
+	padding-bottom:100px;
+	background: transparent;
+}
+#page {
+	min-height: 100%;
+	position: relative;
+}
+a img{
+	-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+           overflow: hidden;
+}
+a img:hover {
+	transform:scale(1.2);
+    -ms-transform:scale(1.2); /* IE 9 */
+    -moz-transform:scale(1.2); /* Firefox */
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -o-transform:scale(1.2); /* Opera */
+   
+}
+
+
+.tab3 {
+	font-family: "Contra";
+	font-size: 2em;
+	color: #191919;
+	padding-left: 15px;
+}
+.tab3:hover {
+	text-decoration: none;
+	font-weight: normal;
+	color: #191919;
+}
+.tab1 {
+	font-family: "Contra";
+	font-size: 2em;
+	color: #191919;
+	padding-left: 15px;
+}
+.tab1:hover {
+	text-decoration: none;
+	font-weight: normal;
+	color: #191919;
+}
+.tab2 {
+	font-family: "Contra";
+	font-size: 2em;
+	color: #191919;
+	padding-left: 15px;
+}
+.tab2:hover {
+	text-decoration: none;
+	font-weight: normal;
+	color: #191919;
+}
+#active {
+	
+	border-bottom-color: #191919;
+}
+#dot {
+	padding-bottom: 10px;
+	padding-left: 17px;
+}
+#ring1 {
+	visibility: hidden;
+	padding-bottom: 10px;
+	padding-left: 17px;
+}
+#ring2 {
+	visibility: hidden;
+	padding-bottom: 10px;
+	padding-left: 17px;
+}
+#ring3 {
+	visibility: hidden;
+	margin-top: 8px;
+	padding-left: 17px;
+	position: absolute;
+}
+
+#content {
+	padding-top: 10%;
+}
+
+a {
+	color: #046484;
+}
+a:hover {
+	color: #02465c;
+}
+#imginside {
+	width: 100%;
+	
+}
+#imginside:hover {
+	transform:scale(1);
+    -ms-transform:scale(1); /* IE 9 */
+    -moz-transform:scale(1); /* Firefox */
+    -webkit-transform:scale(1); /* Safari and Chrome */
+    -o-transform:scale(1); /* Opera */
+}
+.row {
+	padding-bottom: 10px;
+}
+
+.panel {
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+}
+.img-thumbnail {
+  background-color: #f3f3f3;
+  border: 2px solid #0b9bcb;
+  overflow: hidden;
+}
+.thumbnail {
+  background-color: #f3f3f3;
+  border: 2px solid #0b9bcb;
+  overflow: hidden;
+}
+.collapse.in {
+	background: rgba(110, 199, 229, .2);
+	
+}
+#contentTitle {
+	color: #191919;
+	font-size: 1.5em;
+	font-weight: 400;
+	font-family: "Contra";
+}
+#contentTitle:hover {
+	color: #191919;
+	text-decoration: none;
+}
+#contentArtist {
+	color: #191919;
+	font-size: 1.1em;
+	font-weight: 400;
+}
+#contentArtist:hover {
+	color: #191919;
+	text-decoration: none;
+}
+#titleColumn {
+	padding-top: 30px;
+}
+#contentDetails {
+	font-size: 1.1em;
+}
+#blurb {
+	font-style: italic;
+	font-family: "Contra";
+	padding-top: 20px;
+}
+.about {
+	background-repeat: no-repeat;
+	position: relative;
+	border-radius: 4px;
+}
+
+.about:hover {
+	-webkit-filter: grayscale(25%);
+}
+.about p {
+	font-family: "Contra";
+	font-size: 5em;
+	font-weight: bold;
+	color: #f3f3f3;
+	position: absolute;
+	bottom: -2%;
+	left: 20%;
+}
+
+.aboutbox {
+	border-left: solid 3px #046484;
+	padding-left: 15px;
+	margin-bottom: 40px;
+	font-size: 1.2em;
+}
+.aboutbox p {
+	margin-bottom: 10px;
+}
+#aboutrow {
+	margin-bottom: 15px;
+}
+#aboutsection {
+	display:fixed;
+	float: left;
+	margin-top: 30px;
+	margin-left: -50px;
+	font-family: "Contra";
+	color: #046484;
+	font-size: 1.1em;
+	transform:rotate(270deg);
+-ms-transform:rotate(270deg); /* IE 9 */
+-webkit-transform:rotate(270deg); /* Opera, Chrome, and Safari */
+}
+#aboutsectionR {
+	display:fixed;
+	float: left;
+	margin-top: 16px;
+	margin-left: -35px;
+	font-family: "Contra";
+	color: #046484;
+	font-size: 1.1em;
+	transform:rotate(270deg);
+-ms-transform:rotate(270deg); /* IE 9 */
+-webkit-transform:rotate(270deg); /* Opera, Chrome, and Safari */
+}
+.collapse img {
+	border-radius: 6px;
+}
+#education {
+	text-align: left;
+	font-size: 1.2em;
+	font-family: "Contra";
+
+	line-height: 1.5;
+}
+#jobtitle {
+	text-align: left;
+	font-size: 1.3em;
+	font-weight: bold;
+	font-family: "Contra";
+	line-height: 1.5;
+}
+
+#jobplace {
+	text-align: left;
+	font-size: .9em;
+	font-style: italic;
+	line-height: 1;
+}
+
+#jobdescrip {
+	text-align: left;
+	font-size: 1em;
+	margin-bottom:30px;
+}
+.buttonlink {
+	display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none; 
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #6ec7e5;
+  background-color: #ffffff;
+  border: 1px solid #046484;
+  
+}
+.buttonlink:hover,
+.buttonlink:focus,
+.buttonlink:active,
+.buttonlink.active,
+.open .dropdown-toggle.buttonlink {
+  color: #6ec7e5;
+  background-color: #d3eef7;
+  border: 1px solid;
+  border-color: #046484;
+  
+}
+.buttonlink a {
+	text-decoration: none;
+	font-size: 1.3em;
+}
+#footersquare {
+	max-width: 40px;
+	max-height: 40px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #6ec7e5;
+}
+#footer .container {
+	margin: 0 auto;
+	padding-top: 20px;
+}
+#propic {
+	
+	padding-top: 58px;
+	padding-left: 38px;	
+}
+#propic:hover {
+	transform:scale(1);
+    -ms-transform:scale(1); /* IE 9 */
+    -moz-transform:scale(1); /* Firefox */
+    -webkit-transform:scale(1); /* Safari and Chrome */
+    -o-transform:scale(1); /* Opera */
+}
+#redbutton {
+	position: absolute; 
+	left: 50%; 
+	top: 40px; 
+	margin-left: -415px; 
+	border-color: #8d1015;
+}
+#redgame {
+	position: absolute; 
+	top: 100px; 
+	left: 50%;  
+	margin-left: -415px;
+}
+.redupdate {	
+	background-color: rgba(141,16,21,.4);
+	background-color: rgba(141,16,21);
+	width: 70%;
+	min-height: 30px;
+	border: 1px solid #8d1015;
+	border-radius: 5px;
+	position: relative;
+	left: 15%;
+}
+.redupdate p {
+	padding: 15px;
+	font-size: 1.5em;
+	color: #2e2e2e;
+}
+#redtitle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -190px;
+	margin-left: -600px;
+	font-family: "Contra";
+	color: #8d1015;
+	font-size: 2em;
+	transform:rotate(270deg);
+-ms-transform:rotate(270deg); /* IE 9 */
+-webkit-transform:rotate(270deg); /* Opera, Chrome, and Safari */
+}
+
+
+
