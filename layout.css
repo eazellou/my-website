@@ -1,0 +1,25 @@
+/* Mobile Layout: 480px and below. */
+.folioImg {
+	display: none;
+}
+#titleColumn {
+		border-left: solid 3px #046484;
+		padding-left: 15px;
+		margin-left: 20px;
+		padding-top: 30px;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 900px) {
+	.folioImg {
+		display: block;
+	}
+	#titleColumn {
+		border-left: none;
+		padding-left: 0px;
+		margin-left: 0px;
+	}
+}
+
+

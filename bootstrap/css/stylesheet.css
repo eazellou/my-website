@@ -399,9 +399,9 @@ a:hover {
 	padding-top: 20px;
 }
 #propic {
-	
+	max-width: 90%;
 	padding-top: 58px;
-	padding-left: 38px;	
+	padding-left: 5%;
 }
 #propic:hover {
 	transform:scale(1);
