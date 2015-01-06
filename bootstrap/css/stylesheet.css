@@ -194,6 +194,9 @@ a {
 a:hover {
 	color: #02465c;
 }
+a:visited {
+	text-decoration: none;
+}
 #imginside {
 	width: 100%;
 	
@@ -248,9 +251,7 @@ a:hover {
 	color: #191919;
 	text-decoration: none;
 }
-#titleColumn {
-	padding-top: 30px;
-}
+
 #contentDetails {
 	font-size: 1.1em;
 }
